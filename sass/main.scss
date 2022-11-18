@@ -1,5 +1,17 @@
-@import './base/reset';
 @import './utils/variables';
+@import './utils/hidden';
+
+
+@import './base/common';
+@import './base/reset';
+
+
 @import './components/container';
+@import './components/main-nav';
+@import './components/site-nav';
+@import './components/contacts';
+
+@import './layouts/logo';
 @import './layouts/header';
 @import './layouts/hero';
+

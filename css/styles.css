@@ -754,7 +754,7 @@ body {
 }
 
 .footer-soc {
-  margin-left: 70px;
+  margin-left: auto;
 }
 
 .footer-soc-link:hover .footer-soc-icon,
@@ -774,7 +774,7 @@ body {
 
 .modal {
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   background-color: #ffffff;
   position: absolute;
   border-radius: 4px;
@@ -800,7 +800,7 @@ body {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 .input-wrap {
   position: relative;
@@ -808,6 +808,7 @@ body {
 .modal-field {
   margin-bottom: 10px;
 }
+
 .modal-input {
   width: 100%;
   height: 40px;
@@ -839,6 +840,7 @@ body {
 }
 .modal-close-icon {
   transition: fill var(--trans);
+  
 }
 
 .modal-text {
@@ -846,6 +848,10 @@ body {
   height: 120px;
   padding: 12px 16px;
   resize: none;
+}
+.modal-input:focus,
+.input-label:focus {
+  border-color: var(--accent-color);
 }
 .input-label {
   display: block;
@@ -855,12 +861,15 @@ body {
   letter-spacing: 0.01em;
   color: var(--title-text-color);
 }
+.modal-input:focus + .modal-input-icon {
+  fill: var(--accent-color);
+}
 .input-checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  border-color: none;
+  
 }
 .modal-text {
   width: 100%;
@@ -873,6 +882,8 @@ body {
 .check-text {
   display: flex;
   align-items: center;
+  position: relative;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   margin-left: 9px;
@@ -892,18 +903,15 @@ body {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  transition: var(--trans), drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: var(--trans);
 }
 .input-checkbox:checked + .check-text span {
   background-color: var(--accent-color);
   border-color: transparent;
   fill: var(--primary-white-color);
+  
 }
 
-.input-checkbox:focus + .check-text span {
-  background-color: var(--accent-color);
-  fill: var(--primary-white-color);
-}
 
 /*.check-text::before {
   content: '';
@@ -927,29 +935,25 @@ body {
 }
 .modal-close:focus {
   border-color: var(--accent-color);
+  outline: transparent;
+  
 }
 .modal-close:focus .modal-close-icon {
   fill: var(--accent-color);
 }
-.modal-input:focus,
-.input-label:focus {
-  border-color: var(--accent-color);
-}
+
 .modal-text:focus {
   border-color: var(--accent-color);
 }
 
-.modal-input:focus + .modal-input-icon {
-  fill: var(--accent-color);
-}
 
-.modal-input:not(:focus):not(:placeholder-shown):valid {
+
+/* .modal-input:not(:focus):not(:placeholder-shown):valid {
   background-color: rgba(0, 128, 0, 0.373);
 }
-
 .modal-input:not(:focus):not(:placeholder-shown):invalid {
   background-color: rgba(128, 32, 0, 0.373);
-}
+} */
 .modal-input-icon {
   position: absolute;
   left: 12px;
@@ -968,18 +972,20 @@ body {
 }*/
 
 .modal-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
-  min-width: 200px;
-  min-height: 50px;
-  position: absolute;
+  padding-top: 10px;
+  padding-right: 52px;
+  padding-bottom: 10px;
+  padding-left: 52px;
   color: var(--primary-white-color);
   background-color: var(--color-btn-primery);
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 4px;
   transition: box-shadow var(--trans);
   border-color: transparent;
+
 }
 
 .modal-button:hover,
@@ -1003,7 +1009,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: var(--primary-white-color);
 }
 .online-form {
@@ -1025,9 +1031,11 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  min-width: 200px;
-  min-height: 50px;
   margin-left: 12px;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 28px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -1036,6 +1044,7 @@ body {
   border-radius: 4px;
   transition: var(--trans);
   border-color: transparent;
+  border:none;
   outline: transparent;
 }
 .online-btn-icon {
@@ -1049,5 +1058,4 @@ body {
 .online-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
 

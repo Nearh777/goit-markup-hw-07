@@ -22,18 +22,19 @@
   justify-content: center;
   fill: #afb1b8;
   transition: border-color var(--trans);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 
 .customers-soc-icon {
   transition: fill var(--trans);
-}
-
-.customers-link:hover,
-.customers-link:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-.customers-link:hover .customers-soc-icon,
-.customers-link:focus .customers-soc-icon {
+  .customers-link:hover &,
+.customers-link:focus & {
   fill: var(--accent-color);
 }
+}
+
+

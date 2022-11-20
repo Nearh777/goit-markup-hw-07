@@ -32,14 +32,14 @@
   font-family: inherit;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--trans), color var(--trans);
+  &:hover,
+  &:focus {
+    color: var(--primary-text-color);
+    background-color: var(--title-text-color);
+    outline: transparent;
+  }
 }
 
-.button.hero:hover,
-.button.hero:focus {
-  color: var(--primary-text-color);
-  background-color: var(--title-text-color);
-  outline: transparent;
-}
 .overlay {
   height: 600px;
   max-width: 1600px;

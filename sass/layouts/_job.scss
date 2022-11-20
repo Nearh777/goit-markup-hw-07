@@ -7,40 +7,43 @@
 }
 .job-list {
   display: flex;
+  & .item.one::before {
+    content: 'Десктопні додатки';
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    top: 1422px;
+    text-transform: uppercase;
+  
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  & .item.two::before {
+    content: 'Мобільні додатки';
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    top: 1422px;
+    text-transform: uppercase;
+  
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  & .item.three::before {
+    content: 'Дизайнерські рішення';
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    top: 1422px;
+    text-transform: uppercase;
+  
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }
-.job-list .item.one::before {
-  content: 'Десктопні додатки';
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  padding-top: 27px;
-  top: 1422px;
-  text-transform: uppercase;
 
-  color: var(--primary-white-color);
-  background-color: rgba(47, 48, 58, 0.8);
-}
-.job-list .item.two::before {
-  content: 'Мобільні додатки';
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  padding-top: 27px;
-  top: 1422px;
-  text-transform: uppercase;
 
-  color: var(--primary-white-color);
-  background-color: rgba(47, 48, 58, 0.8);
-}
-.job-list .item.three::before {
-  content: 'Дизайнерські рішення';
-  position: absolute;
-  width: 370px;
-  height: 70px;
-  padding-top: 27px;
-  top: 1422px;
-  text-transform: uppercase;
 
-  color: var(--primary-white-color);
-  background-color: rgba(47, 48, 58, 0.8);
-}

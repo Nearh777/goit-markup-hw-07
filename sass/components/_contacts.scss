@@ -18,12 +18,13 @@
   justify-content: center;
   color: var(--title-text-color);
   transition: color var(--trans);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: transparent;
+  }
 }
-.contacts-list .link:hover,
-.contacts-list .link:focus {
-  color: var(--accent-color);
-  outline: transparent;
-}
+
 .header-email {
   gap: 10px;
 }

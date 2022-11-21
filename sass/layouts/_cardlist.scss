@@ -1,10 +1,10 @@
-.feature {
+.cardlist {
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
 }
 
-.feature-list {
+.cardlist__list {
   display: flex;
   & .item + .item {
     margin-left: 30px;
@@ -32,7 +32,7 @@
   }
   
 }
-.feature-icon-item {
+.cardlist__icon-item {
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -43,7 +43,7 @@
 
   background-color: #f5f4fa;
 }
-.feature-icon-img {
+.cardlist__icon-img {
   align-items: center;
   justify-content: center;
 }

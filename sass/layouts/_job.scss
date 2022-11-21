@@ -2,11 +2,12 @@
   padding-top: 0;
   padding-bottom: 94px;
 }
-.job-list .item + .item {
-  margin-left: 30px;
-}
-.job-list {
+
+.job__list {
   display: flex;
+  & .item + .item {
+    margin-left: 30px;
+  }
   & .item.one::before {
     content: 'Десктопні додатки';
     position: absolute;
@@ -15,7 +16,7 @@
     padding-top: 27px;
     top: 1422px;
     text-transform: uppercase;
-  
+
     color: var(--primary-white-color);
     background-color: rgba(47, 48, 58, 0.8);
   }
@@ -27,7 +28,7 @@
     padding-top: 27px;
     top: 1422px;
     text-transform: uppercase;
-  
+
     color: var(--primary-white-color);
     background-color: rgba(47, 48, 58, 0.8);
   }
@@ -39,11 +40,8 @@
     padding-top: 27px;
     top: 1422px;
     text-transform: uppercase;
-  
+
     color: var(--primary-white-color);
     background-color: rgba(47, 48, 58, 0.8);
   }
 }
-
-
-

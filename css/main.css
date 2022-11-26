@@ -287,12 +287,15 @@ section {
   display: flex;
   align-items: center;
   position: relative;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
+  margin-left: 9px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
 .check-text span {
   width: 16px;
   height: 15px;
@@ -305,7 +308,7 @@ section {
   fill: transparent;
   transition: var(--trans);
 }
-.input-checkbox:checked + .check-text {
+.input-checkbox:checked + .check-text span {
   background-color: var(--accent-color);
   border-color: transparent;
   fill: var(--primary-white-color);
@@ -795,10 +798,6 @@ section {
   transition: box-shadow var(--trans);
   overflow: hidden;
 }
-.work-link:hover .work-top-wrap, .work-link:focus .work-top-wrap {
-  transform: translateY(0);
-  transition: transform var(--trans);
-}
 
 .work-img {
   display: block;
@@ -831,6 +830,10 @@ section {
   transform: translateY(100%);
   transition: var(--trans), color var(--trans), background-color var(--trans);
   overflow: auto;
+}
+.work-link:hover .work-top-text, .work-link:focus .work-top-text {
+  transform: translateY(0);
+  transition: transform var(--trans);
 }
 
 .work-card {

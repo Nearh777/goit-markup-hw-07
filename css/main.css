@@ -688,7 +688,7 @@ section {
   height: 44px;
 }
 
-.team__soc-link {
+.team-soc__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -698,15 +698,15 @@ section {
   transition: background-color var(--trans);
   fill: #afb1b8;
 }
-.team__soc-link:hover, .team__soc-link:focus {
+.team-soc__link:hover, .team-soc__link:focus {
   background-color: var(--accent-color);
   outline: none;
 }
 
-.team__soc-icon {
+.team-soc__icon {
   transition: fill var(--trans);
 }
-.team-soc-link:hover .team__soc-icon, .team-soc-link:focus .team__soc-icon {
+.team-soc__link:hover .team-soc__icon, .team-soc__link:focus .team-soc__icon {
   fill: var(--primary-white-color);
 }
 

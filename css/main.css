@@ -407,12 +407,13 @@ section {
 .menu__list {
   display: flex;
   margin-left: 93px;
+  gap: 50px;
 }
 .menu__list .item + .item {
   margin-left: 50px;
 }
 
-.menu__list .link {
+.menu__link {
   padding-top: 25px;
   padding-bottom: 25px;
   color: var(--primary-text-color);
@@ -422,14 +423,14 @@ section {
   letter-spacing: 0.02em;
   transition: color var(--trans);
 }
-.menu__list .link:hover, .menu__list .link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
   outline: transparent;
 }
-.menu__list .link.current {
+.menu__link.current {
   color: var(--accent-color);
 }
-.menu__list .link.current::before {
+.menu__link.current::before {
   content: "";
   min-width: 48px;
   height: 4px;
@@ -438,7 +439,7 @@ section {
   top: 63px;
   background-color: var(--accent-color);
 }
-.menu__list .link.current.portfolio::before {
+.menu__link.current.portfolio::before {
   content: "";
   min-width: 78px;
   height: 4px;
@@ -454,13 +455,10 @@ section {
 .contacts__list {
   display: flex;
   margin-left: auto;
-}
-.contacts__list .item + .item {
-  margin-left: 50px;
-  gap: 10px;
+  gap: 30px;
 }
 
-.contacts__list .link {
+.contacts__link {
   display: flex;
   margin-left: auto;
   padding-top: 25px;
@@ -473,24 +471,17 @@ section {
   justify-content: center;
   color: var(--title-text-color);
   transition: color var(--trans);
+  gap: 10px;
 }
-.contacts__list .link:hover, .contacts__list .link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
   outline: transparent;
-}
-
-.contacts-email {
-  gap: 10px;
 }
 
 .contacts-email-icon {
   align-items: center;
   justify-content: center;
   fill: currentColor;
-}
-
-.contacts-tel {
-  gap: 10px;
 }
 
 .contacts-tel-icon {
@@ -551,19 +542,17 @@ section {
   background-color: #c4c4c4;
 }
 
-.cardlist {
+.feature {
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
 }
 
-.cardlist__list {
+.cardlist {
   display: flex;
+  gap: 30px;
 }
-.cardlist__list .item + .item {
-  margin-left: 30px;
-}
-.cardlist__list .title {
+.cardlist .title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -572,18 +561,19 @@ section {
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
-.cardlist__list .item {
-  width: 270px;
-  text-align: left;
-}
-.cardlist__list .text {
+.cardlist .text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
-.cardlist__icon-item {
+.cardlist__item {
+  width: 270px;
+  text-align: left;
+}
+
+.cardlist__picture {
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -594,7 +584,7 @@ section {
   background-color: #f5f4fa;
 }
 
-.cardlist__icon-img {
+.cardlist__icon {
   align-items: center;
   justify-content: center;
 }
@@ -606,11 +596,10 @@ section {
 
 .job__list {
   display: flex;
+  gap: 30px;
 }
-.job__list .item + .item {
-  margin-left: 30px;
-}
-.job__list .item.one::before {
+
+.job__item.one::before {
   content: "Десктопні додатки";
   position: absolute;
   width: 370px;
@@ -621,7 +610,8 @@ section {
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
 }
-.job__list .item.two::before {
+
+.job__item.two::before {
   content: "Мобільні додатки";
   position: absolute;
   width: 370px;
@@ -632,7 +622,8 @@ section {
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
 }
-.job__list .item.three::before {
+
+.job__item.three::before {
   content: "Дизайнерські рішення";
   position: absolute;
   width: 370px;
@@ -660,17 +651,22 @@ section {
   font-size: 16px;
   line-height: 1.19;
 }
-.team__list .text {
+
+.team__profession {
   color: var(--title-text-color);
   margin-bottom: 16px;
   line-height: 1.19;
 }
 
-.team .title {
+.team__title {
   margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
 
-.team .item {
+.team__item {
   background-color: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
@@ -680,14 +676,14 @@ section {
   padding-bottom: 30px;
 }
 
-.team__soc-list {
+.team-soc__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
-.team__soc-item {
+.team-soc__item {
   width: 44px;
   height: 44px;
 }
